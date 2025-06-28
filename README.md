@@ -35,11 +35,6 @@ Backend:
 - PostgreSQL
 - Maven
 
-Opcional Frontend (Full Stack):
-- React + Vite
-- Axios
-- TailwindCSS / Material UI
-
 🗂️ Estructura del Proyecto
 ----------------------------
 ```
@@ -60,6 +55,18 @@ src/main/java/com/tuusuario/teamflow/
 Este diagrama muestra la arquitectura general del backend de TeamFlow:
 
 ![Arquitectura](docs/arquitectura.png)
+
+🔍 Descripción de cada componente
+---------------------------------
+
+| **Componente**     | **Rol en el sistema**                                                                 |
+|--------------------|----------------------------------------------------------------------------------------|
+| **Cliente**        | Puede ser Postman, un frontend en React o una app móvil. Realiza peticiones HTTP.     |
+| **Controladores**  | Exponen los endpoints REST, validan la entrada y delegan a la capa de servicio.       |
+| **Servicios**      | Contienen la lógica de negocio (reglas, validaciones, transformaciones).              |
+| **Repositorios**   | Usan Spring Data JPA para abstraer el acceso a la base de datos.                      |
+| **Base de datos**  | Almacena las entidades persistentes como usuarios, tareas, proyectos, etc.            |
+
 
 📚 Entidades principales
 -------------------------

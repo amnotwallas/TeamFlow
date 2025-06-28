@@ -52,7 +52,7 @@ src/main/java/com/tuusuario/teamflow/
 
 📊 Diagrama de Arquitectura
 ----------------------------
-Este diagrama muestra la arquitectura general del backend de TeamFlow:
+Este diagrama muestra la arquitectura general de TeamFlow, basada en buenas prácticas de desarrollo backend con Java y Spring Boot. Se aplican principios como separación de responsabilidades, uso de DTOs, y una futura implementación de seguridad con JWT.
 
 ![Arquitectura](docs/arquitectura.png)
 

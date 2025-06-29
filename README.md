@@ -117,7 +117,7 @@ Este diagrama muestra la arquitectura general de TeamFlow, basada en buenas prá
 
 ### 📁 Archivos sugeridos en `/docs`:
 
-- `er_diagram.png` (el que ya generamos)
+- `er_diagram.png`
 - `teamflow_schema.sql`
 - `entities.md` → Detalla atributos, relaciones y enums
 - `roadmap.md` → Etapas y funciones futuras

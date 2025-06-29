@@ -50,12 +50,6 @@ src/main/java/com/tuusuario/teamflow/
 └── TeamFlowApplication.java
 ```
 
-📊 Diagrama de Arquitectura
-----------------------------
-Este diagrama muestra la arquitectura general de TeamFlow, basada en buenas prácticas de desarrollo backend con Java y Spring Boot. Se aplican principios como separación de responsabilidades, uso de DTOs, y una futura implementación de seguridad con JWT.
-
-![Arquitectura](docs/arquitectura.png)
-
 🔍 Descripción de cada componente
 ---------------------------------
 
@@ -66,6 +60,12 @@ Este diagrama muestra la arquitectura general de TeamFlow, basada en buenas prá
 | **Servicios**      | Contienen la lógica de negocio (reglas, validaciones, transformaciones).              |
 | **Repositorios**   | Usan Spring Data JPA para abstraer el acceso a la base de datos.                      |
 | **Base de datos**  | Almacena las entidades persistentes como usuarios, tareas, proyectos, etc.            |
+
+📊 Diagrama de Arquitectura
+----------------------------
+Este diagrama muestra la arquitectura general de TeamFlow, basada en buenas prácticas de desarrollo backend con Java y Spring Boot. Se aplican principios como separación de responsabilidades, uso de DTOs, y una futura implementación de seguridad con JWT.
+
+![Arquitectura](docs/arquitectura.png)
 
 🔐 Roles del sistema (versión futura)
 -------------------------------------

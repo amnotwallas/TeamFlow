@@ -36,4 +36,16 @@ Comment
 - task: Task
 - author: User
 - message: String
-- createdAt: Dat
+- createdAt: Date
+
+🧾 Uso de Enumeraciones (Enums)
+-------------------------------
+
+El proyecto utiliza `enum`s para representar valores limitados y semánticos, mejorando la claridad y evitando errores comunes:
+
+- `TaskPriority`: LOW, MEDIUM, HIGH
+- `TaskStatus` (opcional): TODO, IN_PROGRESS, DONE
+- `UserRole`: ADMIN, MEMBER, VIEWER
+- `ProjectVisibility` (futuro): PRIVATE, PUBLIC
+
+Esto permite mayor control de datos y facilita la validación, filtrado y representación visual.

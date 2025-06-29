@@ -67,87 +67,11 @@ Este diagrama muestra la arquitectura general de TeamFlow, basada en buenas prá
 | **Repositorios**   | Usan Spring Data JPA para abstraer el acceso a la base de datos.                      |
 | **Base de datos**  | Almacena las entidades persistentes como usuarios, tareas, proyectos, etc.            |
 
-
-📚 Entidades principales
--------------------------
-User
-- id: Long
-- username: String
-- email: String
-- password: String
-- Relaciones: proyectos, tareas, comentarios
-
-Project
-- id: Long
-- name: String
-- description: String
-- owner: User
-- members: List<User>
-- boards: List<Board>
-
-Board
-- id: Long
-- name: String ("Por hacer", "En progreso", "Hecho")
-- project: Project
-- tasks: List<Task>
-
-Task
-- id: Long
-- title: String
-- description: String
-- assignedTo: User
-- board: Board
-- dueDate: Date
-- priority: Enum (LOW, MEDIUM, HIGH)
-- comments: List<Comment>
-
-Comment
-- id: Long
-- task: Task
-- author: User
-- message: String
-- createdAt: Date
-
-🧾 Uso de Enumeraciones (Enums)
--------------------------------
-
-El proyecto utiliza `enum`s para representar valores limitados y semánticos, mejorando la claridad y evitando errores comunes:
-
-- `TaskPriority`: LOW, MEDIUM, HIGH
-- `TaskStatus` (opcional): TODO, IN_PROGRESS, DONE
-- `UserRole`: ADMIN, MEMBER, VIEWER
-- `ProjectVisibility` (futuro): PRIVATE, PUBLIC
-
-Esto permite mayor control de datos y facilita la validación, filtrado y representación visual.
-
-
 🔐 Roles del sistema (versión futura)
 -------------------------------------
 - ADMIN: Creador del proyecto, controla todo
 - MEMBER: Puede crear y editar tareas
 - VIEWER: Solo lectura
-
-🧪 Etapas de desarrollo (Roadmap)
-----------------------------------
-1. Versión 1:
-   - CRUD de usuarios y proyectos sin autenticación
-   - PostgreSQL configurado
-   - API REST básica
-
-2. Versión 2:
-   - Relaciones entre usuarios, proyectos y tareas
-   - Tableros estilo Kanban (backend)
-
-3. Versión 3:
-   - Seguridad con JWT y Spring Security
-   - Roles por proyecto
-
-4. Versión 4:
-   - Comentarios, actividad, historial
-   - Documentación con Swagger
-
-5. Versión 5:
-   - Deploy en Railway (backend) y Vercel (frontend)
 
 📌 Funcionalidades por versión
 -------------------------------
@@ -190,6 +114,13 @@ Esto permite mayor control de datos y facilita la validación, filtrado y repres
 - [ ] Seguridad con JWT
 - [ ] Comentarios en tareas
 - [ ] Deploy en Railway / Vercel
+
+### 📁 Archivos sugeridos en `/docs`:
+
+- `er_diagram.png` (el que ya generamos)
+- `teamflow_schema.sql`
+- `entities.md` → Detalla atributos, relaciones y enums
+- `roadmap.md` → Etapas y funciones futuras
 
 🤝 Contribuciones
 -----------------

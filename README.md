@@ -73,6 +73,17 @@ Este diagrama muestra la arquitectura general de TeamFlow, basada en buenas prá
 - MEMBER: Puede crear y editar tareas
 - VIEWER: Solo lectura
 
+🧑‍💻 Permisos por defecto
+--------------------------
+Por diseño, todos los usuarios autenticados pueden:
+
+- Crear nuevos proyectos (se asignan como `owner`)
+- Invitar otros miembros a sus proyectos
+- Ver y gestionar tareas dentro de sus propios proyectos
+
+Esto puede ampliarse en versiones futuras con control de permisos más detallado.
+
+
 📌 Funcionalidades por versión
 -------------------------------
 | Versión | Características principales                          |

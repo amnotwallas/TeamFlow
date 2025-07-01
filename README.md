@@ -65,23 +65,7 @@ src/main/java/com/tuusuario/teamflow/
 ----------------------------
 Este diagrama muestra la arquitectura general de TeamFlow, basada en buenas prácticas de desarrollo backend con Java y Spring Boot. Se aplican principios como separación de responsabilidades, uso de DTOs, y una futura implementación de seguridad con JWT.
 
-<<<<<<< HEAD
 ![Arquitectura](docs/arquitectura.png)
-=======
-
-🧾 Uso de Enumeraciones (Enums)
--------------------------------
-
-El proyecto utiliza `enum`s para representar valores limitados y semánticos, mejorando la claridad y evitando errores comunes:
-
-- `TaskPriority`: LOW, MEDIUM, HIGH
-- `TaskStatus` (opcional): TODO, IN_PROGRESS, DONE
-- `UserRole`: ADMIN, MEMBER, VIEWER
-- `ProjectVisibility` (futuro): PRIVATE, PUBLIC
-
-Esto permite mayor control de datos y facilita la validación, filtrado y representación visual.
-
->>>>>>> f0736c2 (Adding project folder Teamflow to repo)
 
 🔐 Roles del sistema (versión futura)
 -------------------------------------

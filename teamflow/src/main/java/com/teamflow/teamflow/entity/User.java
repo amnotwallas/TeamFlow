@@ -24,7 +24,6 @@ import com.teamflow.teamflow.entity.Comment;
 
 @Entity
 @Table(name = "users")
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class User {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,6 +37,37 @@ public class User {
 
     @Column(nullable = false)
     private String password;
+
+    // Constructor 
+    public User(String username, String email, String password) {
+        
+       
+    }
+
+    // Getters and Setters
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getId() {
+        return id.intValue();
+    }
+    public String getUsername() {
+        return username;
+    }
+    public String getEmail() {
+        return email;
+    }
+    
+
 
     // Relaciones
     @OneToMany(mappedBy = "owner")
